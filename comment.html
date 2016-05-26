@@ -21,18 +21,31 @@
 	<main>
 		<div class="content">
 			<article>
-				<h2><a href="comment.html">Post Headline</a></h2>
+				<h2><a href="#">Post Headline</a></h2>
 				<p>Written by <a href="#" class="author">Shane Riley</a> on Feb,15,2014</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit in voluptate velit esse culpa qui officia deserunt mollit.</p>
 			</article>
 			<article>
-				<h2><a href="comment.html">Post Headline</a></h2>
-				<p>Written by <a href="#" class="author">Shane Riley</a> on Feb,15,2014</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit.</p>
+				<h2>Comments</h2>
+				<div class="comment">
+					<p class="comment_kevin"><a href="#" class="author">Kevin</a> on <time datetime="2014-02-15">Feb, 15, 2014</time> </p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+				<div class="comment">
+					<p class="comment_chris"><a href="#" class="author">Chris</a> on <time datetime="2014-02-15">Feb, 15, 2014</time></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					
+				</div>
+
 			</article>
-			<form action="#" method="get">
-				<input type="submit" name="prev" value="Prev">
-				<input type="submit" name="next" value="Next" class="active">
+			<form action="#" method="post">
+				<h2>Post Comments</h2>
+				<ul>
+					<li><input type="text" name="name" placeholder="Enter your name"></li>
+					<li><input type="text" name="email" placeholder="Enter your email address"></li>
+					<li><textarea name="comment" placeholder="Enter your comments" ></textarea></li>
+				</ul>
+				<input type="submit" name="submit" value="Submit" class="active">
 			</form>
 		</div>
 		<aside>

@@ -1,0 +1,126 @@
+@import url("whitespace-reset.css");
+
+body {
+	font: normal 20px Arial, sans-serif;
+	color: #45494d;
+}
+/*Header*/
+header {
+	background: #3d3d3d;
+	text-align: center;
+}
+header h1 {
+	color: white;
+	font-size: 68px;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 146px 0 30px 0;
+}
+header ul { padding: 110px 0 45px 0;}
+header li {
+	padding: 0 25px;
+	display: inline-block;
+}
+header a {
+	color: #fff;
+	text-transform: uppercase;
+}
+header a:hover {
+	color: #f5dc39;
+}
+header a.active { color: #50c3af; }
+/*main*/
+main {
+	max-width: 1000px;
+	margin:88px auto 90px auto;
+	overflow: hidden;
+}
+main a:hover {
+	color: #50c3af;
+}
+/*content*/
+.content {
+	width: 75%;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 110px;
+	line-height: 30px;
+
+}
+.content a {
+	color: #45494d;
+}
+.content h2 {
+	font-size: 36px;
+	font-weight: bold;
+}
+.content h2 + p { padding-top: 25px; }
+.content p + p { padding-top: 30px; }
+.content article + article {
+	padding: 95px 0;
+}
+.content input[type="submit"] {
+	width: 86px;
+	height: 30px;
+	color: white;
+	border: none;
+	font-size: 14px;
+	border-radius: 15px;
+	background: #d2d5da;
+
+}
+.content input[type="submit"] + input[type="submit"] {
+	margin-left: 30px;
+}
+.content input[type="submit"].active {
+	cursor: pointer;
+	background: #50c3af;
+}
+.author {
+	color: #50c3af;
+}
+/*aside*/
+aside {
+	overflow: hidden;
+	background: #f6f7f8;
+	padding:35px;
+	font-size: 14px;
+	line-height: 25px;
+	box-sizing: border-box;
+}
+aside h3 {
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 35px;
+}
+
+aside a,p { 
+	color: #787b80;
+}
+aside a {
+	display: block;
+	text-transform: uppercase;
+}
+
+aside a:before {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	content: "";
+	padding-right: 10px;
+	background: transparent url("images/category.png") 0 0 no-repeat;
+}
+aside section + section {
+	padding: 115px 0;
+}
+
+/*footer*/
+footer {
+	color: #7e8287;
+	font-size: 12px;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px 0 55px 0;
+	border-top: 1px solid #d0d0d0;
+}

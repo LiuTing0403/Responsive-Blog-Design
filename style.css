@@ -4,6 +4,9 @@ body {
 	font: normal 20px Arial, sans-serif;
 	color: #45494d;
 }
+* {
+	box-sizing: border-box;
+}
 /*Header*/
 header {
 	background: #3d3d3d;
@@ -15,6 +18,11 @@ header h1 {
 	font-weight: normal;
 	text-transform: uppercase;
 	padding: 146px 0 30px 0;
+}
+header figure {margin: 0 20px;}
+header figure img {
+	max-width: 503px;
+	width: 100%;
 }
 header ul { padding: 110px 0 45px 0;}
 header li {
@@ -53,9 +61,9 @@ main a:hover {
 .content h2 {
 	font-size: 36px;
 	font-weight: bold;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
-.content p + p { padding-top: 30px; }
+.content p + p { padding-top: 15px; }
 .content article + article {
 	padding: 95px 0;
 }
@@ -76,6 +84,7 @@ main a:hover {
 	cursor: pointer;
 	background: #50c3af;
 }
+
 a.author {
 	color: #50c3af;
 }
@@ -114,7 +123,7 @@ aside h3 {
 	font-size: 16px;
 	font-weight: bold;
 	text-transform: uppercase;
-	padding-bottom: 35px;
+	padding-bottom: 25px;
 }
 
 aside a,p { 
@@ -165,4 +174,57 @@ footer {
 	margin: 0 auto;
 	padding: 20px 0 55px 0;
 	border-top: 1px solid #d0d0d0;
+}
+/*screen media */
+@media screen and (max-width: 768px) {
+	header h1 {
+		font-size: 48px;
+		padding-top: 40px;
+	}
+	.content h2 {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.content {
+		clear: both;
+		width: 100%;
+		padding: 0 25px 50px 25px;
+	}
+	aside section {
+		display: inline-block;
+		float: left;
+		width: 49%;
+		padding: 0;
+	}
+
+	aside section + section {
+		padding: 0;
+	}
+}
+@media screen and (max-width: 480px) {
+	header ul {
+		padding: 50px 0 0 0;
+	}
+	header li {
+		box-sizing: border-box;
+		width: 49%;
+		padding: 10px 0;
+	}
+	 aside {
+	 	background: white;
+	 	padding: 0 25px;
+	 }
+	 aside section {
+	 	background: #f6f7f8;
+	 	clear: both;
+	 	width: 100%;
+	 	display: block;
+	 	margin: 25px 0 0 0;
+	 	padding: 20px;
+	 }
+	 aside section + section {
+	 	padding: 20px;
+	 }
+
 }

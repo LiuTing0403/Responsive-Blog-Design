@@ -63,7 +63,7 @@ main a:hover {
 	font-weight: bold;
 	padding-bottom: 20px;
 }
-.content p + p { padding-top: 15px; }
+.content p { padding: 15px 0; }
 .content article + article {
 	padding: 95px 0;
 }
@@ -143,18 +143,19 @@ aside a:before {
 	background: transparent url("images/category.png") 0 0 no-repeat;
 }
 aside section + section {
-	padding: 115px 0;
+	margin: 115px 0;
 }
-.comment_kevin {
+.comment_kevin, .comment_chris {
+	padding: 15px 0;
 }
-.comment-chris {
-}
+
 .comment_kevin:before {
 	display: inline-block;
 	content: "";
 	width: 40px;
 	height: 40px;
 	padding-right: 10px;
+	vertical-align: middle;
 	background: transparent url("images/kevin.png") 0 0 no-repeat;
 }
 .comment_chris:before {
@@ -163,6 +164,7 @@ aside section + section {
 	width: 40px;
 	height: 40px;
 	padding-right: 10px;
+	vertical-align: middle;
 	background: transparent url("images/chris.png") 0 0 no-repeat;
 }
 
@@ -199,7 +201,7 @@ footer {
 	}
 
 	aside section + section {
-		padding: 0;
+		margin: 0;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -223,8 +225,6 @@ footer {
 	 	margin: 25px 0 0 0;
 	 	padding: 20px;
 	 }
-	 aside section + section {
-	 	padding: 20px;
-	 }
+	
 
 }

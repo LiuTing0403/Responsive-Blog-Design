@@ -4,9 +4,6 @@ body {
 	font: normal 20px Arial, sans-serif;
 	color: #45494d;
 }
-* {
-	box-sizing: border-box;
-}
 /*Header*/
 header {
 	background: #3d3d3d;
@@ -107,6 +104,7 @@ li textarea {
 	border-radius: 3px;
 	border-color: #d0d0d0;
 	padding: 10px 10px;
+	resize: none;
 }
 
 
@@ -213,18 +211,18 @@ footer {
 		width: 49%;
 		padding: 10px 0;
 	}
-	 aside {
+	aside {
 	 	background: white;
 	 	padding: 0 25px;
-	 }
-	 aside section {
+	}
+	aside section {
 	 	background: #f6f7f8;
 	 	clear: both;
 	 	width: 100%;
 	 	display: block;
 	 	margin: 25px 0 0 0;
 	 	padding: 20px;
-	 }
+	}
 	
 
 }
